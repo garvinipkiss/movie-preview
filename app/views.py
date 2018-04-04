@@ -1,7 +1,7 @@
 from flask import render_template
 from app import app
 
-@app.route('/movie/<movie_id>')
+@app.route('/movie/<int:movie_id>')
 def movie(movie_id):
 
     '''
